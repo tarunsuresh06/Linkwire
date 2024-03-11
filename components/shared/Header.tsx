@@ -18,10 +18,13 @@ import { headerLinks } from "@/constants";
 const CustomLink = ({ href, title, className = "" }: any) => {
   const path = usePathname();
   return (
-    <Link href={href} className={`${className} relative group font-medium`}>
+    <Link
+      href={href}
+      className={`${className} relative group font-medium text-lg`}
+    >
       {title}
       <span
-        className={`h-[1px] inline-block bg-primary absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] duration-300 
+        className={`h-[2px] inline-block bg-white absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] duration-300 
           ${path === href ? "w-full" : "w-0"}`}
       >
         &nbsp;
@@ -32,9 +35,9 @@ const CustomLink = ({ href, title, className = "" }: any) => {
 
 const Header = () => {
   return (
-    <header className="w-full bg-black/5">
+    <header className="w-full bg-cyan-950/50 z-50">
       <div className="wrapper flex justify-between items-center">
-        <Link href="/" className="text-2xl font-semibold">
+        <Link href="/" className="text-4xl font-bold">
           Linkwire.
         </Link>
         <nav className="hidden md:block">
@@ -45,7 +48,7 @@ const Header = () => {
         <div className="flex justify-center items-center">
           <Link
             href="/signin"
-            className="bg-blue-400 hover:bg-blue-500 text-white px-5 py-2 rounded-lg hidden md:inline-block font-semibold duration-100"
+            className="bg-white hover:bg-[#0a3244] hover:text-white text-[#0A1A44] px-5 py-2 rounded-lg hidden md:inline-block font-semibold duration-100"
           >
             Sign In
           </Link>
