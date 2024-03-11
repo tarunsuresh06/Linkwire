@@ -1,7 +1,10 @@
+import PostCustomCard from "@/components/shared/PostCustomCard";
 import Image from "next/image";
 import Link from "next/link";
 
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaGlobe } from "react-icons/fa";
+
+
 
 export default function Home() {
   return (
@@ -37,9 +40,24 @@ export default function Home() {
       </section>
       <section className="w-full min-h-screen bg-white">
         <div className="wrapper w-full min-h-screen">
-          <h1 className="text-[#0A1A44] text-center text-4xl font-semibold uppercase">
+          <h1 className="text-[#0A1A44] text-center text-4xl font-semibold uppercase my-4">
             Recently Boosted Posts
           </h1>
+          <div className="w-full flex justify-center items-center flex-wrap gap-4 my-4">
+            <PostCustomCard />
+            <PostCustomCard />
+            <PostCustomCard />
+          </div>
+          <div className="flex justify-center items-center w-full my-8">
+          <Link
+            href="/"
+            className="bg-[#0a3244] hover:text-[#0a3244] text-center 
+            hover:bg-transparent border border-[#0a3244] text-white px-5 
+            py-3 rounded-lg font-semibold duration-100 flex justify-center items-center"
+          >
+            <FaGlobe size={20} className="mr-4" />Discover More Posts
+          </Link>
+          </div>
         </div>
       </section>
     </>
