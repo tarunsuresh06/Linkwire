@@ -35,7 +35,7 @@ const CustomLink = ({ href, title, className = "" }: any) => {
 
 const Header = () => {
   return (
-    <header className="w-full bg-cyan-950/50 z-50">
+    <header className="w-full bg-cyan-800/60 backdrop-blur-md backdrop-filter fixed">
       <div className="wrapper flex justify-between items-center">
         <Link href="/" className="text-4xl font-bold">
           Linkwire.
@@ -43,7 +43,8 @@ const Header = () => {
         <nav className="hidden md:block">
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/search" title="Search" className="mx-4" />
-          <CustomLink href="/posts" title="Posts" className="ml-4" />
+          <CustomLink href="/groups" title="Groups" className="mx-4" />
+          <CustomLink href="/channels" title="Channels" className="ml-4" />
         </nav>
         <div className="flex justify-center items-center">
           <Link
