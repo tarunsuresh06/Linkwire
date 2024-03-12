@@ -19,7 +19,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 
-import { BsThreeDotsVertical } from "react-icons/bs";
+import { BsThreeDotsVertical, BsPlugFill } from "react-icons/bs";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -38,15 +38,23 @@ const PostCustomCard = () => {
           />
           <div className="flex flex-col justify-between items-start">
             <CardTitle>Post Title</CardTitle>
-            <Badge className="bg-[#00C4CC] hover:bg-[#00C4CC] mt-2">
-              Catagory
-            </Badge>
+            <div>
+              <Badge className="bg-blue-400 hover:bg-blue-500 mt-2 mr-2">
+                Channel
+              </Badge>
+              <Badge className="bg-orange-500 hover:bg-orange-600 mt-2">
+                Cryptocurrency
+              </Badge>
+            </div>
           </div>
         </div>
 
         <DropdownMenu>
-          <DropdownMenuTrigger>
-            <BsThreeDotsVertical size={25} />
+          <DropdownMenuTrigger className="outline-none">
+            <BsThreeDotsVertical
+              size={25}
+              className=" hover:text-slate-400 duration-300"
+            />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem>Get Link</DropdownMenuItem>
@@ -58,21 +66,35 @@ const PostCustomCard = () => {
       </CardHeader>
       <Separator />
       <CardContent>
+        <div className="flex flex-wrap justify-start items-center mt-4 gap-4">
+          <Badge className="border border-cyan-900 bg-transparent hover:bg-transparent text-[#0A1A44] rounded-md">
+            Tag-1
+          </Badge>
+          <Badge className="border border-cyan-900 bg-transparent hover:bg-transparent text-[#0A1A44] rounded-md">
+            Tag-2
+          </Badge>
+          <Badge className="border border-cyan-900 bg-transparent hover:bg-transparent text-[#0A1A44] rounded-md">
+            Tag-3
+          </Badge>
+          <Badge className="border border-cyan-900 bg-transparent hover:bg-transparent text-[#0A1A44] rounded-md">
+            Tag-4
+          </Badge>
+          <Badge className="border border-cyan-900 bg-transparent hover:bg-transparent text-[#0A1A44] rounded-md">
+            Tag-5
+          </Badge>
+        </div>
         <p className="my-4">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industrys standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages.
+          since the 1500s.
         </p>
       </CardContent>
       <CardFooter className="flex-col">
         <Link
           href="/"
-          className="bg-[#0a3244] hover:text-[#0a3244] text-center hover:bg-transparent border border-[#0a3244] text-white px-5 py-2 rounded-full w-48 font-semibold duration-100"
+          className="bg-[#0a3244] hover:text-[#0a3244] text-center hover:bg-transparent border border-[#0a3244] text-white px-5 py-2 rounded-full w-48 font-semibold flex justify-center items-center duration-100"
         >
+          <BsPlugFill size={20} />
           Join Community
         </Link>
         <div className="flex justify-end items-center mt-4 w-full">

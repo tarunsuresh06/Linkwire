@@ -4,8 +4,6 @@ import Link from "next/link";
 
 import { FaSearch, FaGlobe } from "react-icons/fa";
 
-
-
 export default function Home() {
   return (
     <>
@@ -47,16 +45,20 @@ export default function Home() {
             <PostCustomCard />
             <PostCustomCard />
             <PostCustomCard />
+            <PostCustomCard />
+            <PostCustomCard />
+            <PostCustomCard />
           </div>
           <div className="flex justify-center items-center w-full my-8">
-          <Link
-            href="/"
-            className="bg-[#0a3244] hover:text-[#0a3244] text-center 
+            <Link
+              href="/"
+              className="bg-[#0a3244] hover:text-[#0a3244] text-center 
             hover:bg-transparent border border-[#0a3244] text-white px-5 
             py-3 rounded-lg font-semibold duration-100 flex justify-center items-center"
-          >
-            <FaGlobe size={20} className="mr-4" />Discover More Posts
-          </Link>
+            >
+              <FaGlobe size={20} className="mr-4" />
+              Discover More Posts
+            </Link>
           </div>
         </div>
       </section>
