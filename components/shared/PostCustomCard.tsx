@@ -50,7 +50,9 @@ const PostCustomCard = () => {
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem>Get Link</DropdownMenuItem>
-            <DropdownMenuItem className="text-red-500 hover:!text-red-500">Report</DropdownMenuItem>
+            <DropdownMenuItem className="text-red-500 hover:!text-red-500">
+              Report
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </CardHeader>
@@ -58,7 +60,7 @@ const PostCustomCard = () => {
       <CardContent>
         <p className="my-4">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the industrys standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book. It has survived not only
           five centuries, but also the leap into electronic typesetting,
@@ -67,11 +69,16 @@ const PostCustomCard = () => {
         </p>
       </CardContent>
       <CardFooter className="flex-col">
-        <Link href="/" className="bg-[#0a3244] hover:text-[#0a3244] text-center hover:bg-transparent border border-[#0a3244] text-white px-5 py-2 rounded-full w-48 font-semibold duration-100">Join Community</Link>
+        <Link
+          href="/"
+          className="bg-[#0a3244] hover:text-[#0a3244] text-center hover:bg-transparent border border-[#0a3244] text-white px-5 py-2 rounded-full w-48 font-semibold duration-100"
+        >
+          Join Community
+        </Link>
         <div className="flex justify-end items-center mt-4 w-full">
-        <p>
-          <span className="font-semibold">Boosted: </span>just now
-        </p>
+          <p>
+            <span className="font-semibold">Boosted: </span>just now
+          </p>
         </div>
       </CardFooter>
     </Card>
