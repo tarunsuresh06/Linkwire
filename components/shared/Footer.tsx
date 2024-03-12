@@ -25,7 +25,7 @@ const CustomLink = ({ href, title, className = "" }: any) => {
 
 const Footer = () => {
   return (
-    <footer className="min-h-[200px] w-full bg-cyan-900 py-10">
+    <footer className="min-h-[200px] w-full py-10">
       <div className="wrapper flex justify-between items-center">
         <div className="w-1/2">
           <Link href="/" className="text-4xl font-bold text-white">

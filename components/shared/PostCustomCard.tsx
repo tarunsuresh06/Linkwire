@@ -26,24 +26,24 @@ import Link from "next/link";
 
 const PostCustomCard = () => {
   return (
-    <Card className="grow max-w-[400px] min-h-[400px]">
+    <Card className="grow max-w-[400px]">
       <CardHeader className="flex flex-row justify-start items-center">
         <div className="flex justify-start items-center w-full">
           <Image
             className="rounded mr-4"
             src="/images/samplecard.jpg"
-            height={80}
-            width={80}
+            height={100}
+            width={100}
             alt="card"
           />
           <div className="flex flex-col justify-between items-start">
             <CardTitle>Post Title</CardTitle>
-            <div>
-              <Badge className="bg-blue-400 hover:bg-blue-500 mt-2 mr-2">
+            <div className="flex justify-start items-center flex-wrap gap-2 mt-2">
+              <Badge className="bg-blue-500/30 border hover:bg-blue-500/30 border-blue-500 text-blue-800 rounded-sm uppercase cursor-pointer">
                 Channel
               </Badge>
-              <Badge className="bg-orange-500 hover:bg-orange-600 mt-2">
-                Cryptocurrency
+              <Badge className="bg-orange-500/30 hover:bg-orange-500/30 border border-orange-500 text-orange-800 rounded-sm uppercase cursor-pointer">
+                Finance
               </Badge>
             </div>
           </div>
@@ -65,7 +65,7 @@ const PostCustomCard = () => {
         </DropdownMenu>
       </CardHeader>
       <Separator />
-      <CardContent>
+      <CardContent className="grow">
         <div className="flex flex-wrap justify-start items-center mt-4 gap-4">
           <Badge className="border border-cyan-900 bg-transparent hover:bg-transparent text-[#0A1A44] rounded-md">
             Tag-1
