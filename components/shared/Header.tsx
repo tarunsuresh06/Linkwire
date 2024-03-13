@@ -10,9 +10,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
-
 import { GiHamburgerMenu } from "react-icons/gi";
-
 import { headerLinks } from "@/constants";
 
 const CustomLink = ({ href, title, className = "" }: any) => {
@@ -35,7 +33,7 @@ const CustomLink = ({ href, title, className = "" }: any) => {
 
 const Header = () => {
   return (
-    <header className="w-full bg-cyan-800/60 backdrop-blur-md backdrop-filter fixed">
+    <header className="w-full bg-cyan-800/60 backdrop-blur-md backdrop-filter text-white">
       <div className="wrapper flex justify-between items-center">
         <Link href="/" className="text-4xl font-bold">
           Linkwire.

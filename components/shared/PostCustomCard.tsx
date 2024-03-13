@@ -1,7 +1,6 @@
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -11,8 +10,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -26,7 +23,7 @@ import Link from "next/link";
 
 const PostCustomCard = () => {
   return (
-    <Card className="grow max-w-[400px]">
+    <Card className="grow max-w-[400px] shadow-sm">
       <CardHeader className="flex flex-row justify-start items-center">
         <div className="flex justify-start items-center w-full">
           <Image
@@ -39,10 +36,10 @@ const PostCustomCard = () => {
           <div className="flex flex-col justify-between items-start">
             <CardTitle>Post Title</CardTitle>
             <div className="flex justify-start items-center flex-wrap gap-2 mt-2">
-              <Badge className="bg-blue-500/30 border hover:bg-blue-500/30 border-blue-500 text-blue-800 rounded-sm uppercase cursor-pointer">
+              <Badge className="bg-blue-500 border hover:bg-blue-500 border-blue-500 rounded-sm uppercase cursor-pointer">
                 Channel
               </Badge>
-              <Badge className="bg-orange-500/30 hover:bg-orange-500/30 border border-orange-500 text-orange-800 rounded-sm uppercase cursor-pointer">
+              <Badge className="bg-orange-500 hover:bg-orange-500 border border-orange-500 rounded-sm uppercase cursor-pointer">
                 Finance
               </Badge>
             </div>

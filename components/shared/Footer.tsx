@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 
@@ -25,10 +24,10 @@ const CustomLink = ({ href, title, className = "" }: any) => {
 
 const Footer = () => {
   return (
-    <footer className="min-h-[200px] w-full py-10">
+    <footer className="min-h-[200px] w-full py-10 text-white">
       <div className="wrapper flex justify-between items-center">
         <div className="w-1/2">
-          <Link href="/" className="text-4xl font-bold text-white">
+          <Link href="/" className="text-4xl font-bold">
             Linkwire.
           </Link>
           <p className="mt-4">&copy; {new Date().getFullYear()} Linkwire.</p>
