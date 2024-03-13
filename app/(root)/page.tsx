@@ -1,20 +1,19 @@
 import PostCustomCard from "@/components/shared/PostCustomCard";
 import Image from "next/image";
 import Link from "next/link";
-
 import { FaSearch, FaGlobe } from "react-icons/fa";
 
 export default function Home() {
   return (
     <>
-      <section className="wrapper w-full min-h-screen flex flex-col justify-center items-start md:flex-row md:items-center pt-24 md:pt-0">
+      <section className="wrapper w-full min-h-screen flex flex-col justify-center items-start md:flex-row md:items-center text-white">
         <div className="min-h-full w-full flex flex-col justify-center items-center">
           <h1 className="text-6xl font-bold mb-8">
             We Helps to Discover New Community across the globe.
           </h1>
           <Link
             href="#recentlyBoosted"
-            className="bg-[#0a3244] hover:bg-transparent border border-[#0a3244] text-white flex justify-center items-center hover:text-[#0A1A44] px-6 py-4 w-56 text-center text-xl self-start rounded-full font-semibold duration-300"
+            className="bg-[#0a3244] hover:bg-transparent border border-[#0a3244] flex justify-center items-center hover:text-[#0A1A44] px-6 py-4 w-56 text-center text-xl self-start rounded-full font-semibold duration-300"
           >
             <FaSearch size={20} className="mr-2 mt-1" />
             Discover
